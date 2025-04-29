@@ -1,0 +1,63 @@
+/* ------ Global CSS Styles with CSS variables ------ */
+:root{
+    /*Color Variables*/
+    --primary-color: rgb(5, 53, 39);
+    --background-color: rgb(4, 50, 34);
+    --text-color: white;
+    --link-hover-color: rgb(0, 96, 107);
+
+    /* Font Variables */
+    --font-family: 'Arial', sans-serif;
+    --font-size-base: 18px;
+    --line-height-base: 1.6;
+
+    /* Spacing Variables */
+    --spacing-small: 10px;
+    --spacing-medium: 20px;
+    --spacing-large: 40px;
+    --max-width: 1200px;
+}
+
+/* Global Reset (for consistency) */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base Styles */
+body{
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: var(--line-height-base);
+}
+
+h1, h2, h3, h4, h5,h6{
+    font-weight: bold;
+    margin-bottom: var(--spacing-small);
+}
+
+p{
+    margin-bottom: var(--spacing-small);
+}
+
+
+a{
+    font-size: 1rem;
+    color: white;
+    text-decoration: underline;
+}
+
+a:hover{
+    color:aqua;
+}
+
+/* Container - Layout Wrapping */
+.container{
+    width: 90%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: var(--spacing-medium);
+}
