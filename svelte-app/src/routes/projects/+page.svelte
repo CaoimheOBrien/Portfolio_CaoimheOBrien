@@ -43,20 +43,22 @@
     <div class="projects">
         <ProjectCard
             id="website_project1"
-            title="Website Project 1"
-            image="/websiteImage.jpg"
-            description="Here is one website that I made"
-            moreInfo ="And here is even more information on this project that I'm quite proud of!"
+            title="Sage Academy"
+            image="/sageAcademyScreenshot.png"
+            description="Here is a website that I made for a group project"
+            moreInfo ="I created this website as a part of a group project with 2 other classmates. In our brief we were told to create an educational website so we created a platform for staff and students to have learning resources, quizzes and other information. I had a great experience during this project. It was my first time using the Svelte framework which opened up a lot of opportunities for us. The link to the live website is below:"
+            link="https://caoimheobrien.github.io/WebUIDesign_2025GroupProject/"
             expandedId={expandedProjectId}
             setExpanded={setExpanded}
         />
 
         <ProjectCard
             id="website_project2"
-            title="Website Project 2"
-            image="/websiteImage.jpg"
-            description="Here is one website that I made."
-            moreInfo ="And here is even more information on this project that I'm quite proud of! But I like website 1 better."
+            title="'Adventure In the Woods' Report"
+            image="/adventureInTheWoodsReportScreenshot.png"
+            description="Here is a website that I made for my Leaving Certificate Project"
+            moreInfo ="As part of my Leaving Cert Computer Science final project, I had to create a report in the format of a website. For my project I had made a text-based python game called 'Adventure in the Woods' which was a RPG/ choose your own adventure game. It was one of the first websites I had total creative freedom over and this made me fall in love with web development."
+            link=""
             expandedId={expandedProjectId}
             setExpanded={setExpanded}
         />
@@ -72,9 +74,10 @@
         <ProjectCard
             id="animation_project1"
             title="Animation Project 1"
-            image="/animationImage.png"
+            image="/Bounce_Caoimhe.gif"
             description="Here is one animation that I made."
-            moreInfo ="Slay."
+            moreInfo ="This was my first attempt at animation in first year using Aesprite. We created a simple bounce animation and I'm really proud of how it turned out."
+            link=""
             expandedId={expandedProjectId}
             setExpanded={setExpanded}
         />
@@ -82,9 +85,10 @@
         <ProjectCard
             id="animation_project2"
             title="Animation Project 2"
-            image="/animationImage.png"
-            description="Here is one animation that I made."
-            moreInfo ="Slay."
+            image="/enemy1_idle.gif"
+            description="Here is an idle animation that I made."
+            moreInfo ="I made this character and idle animation as an enemy in a game."
+            link=""
             expandedId={expandedProjectId}
             setExpanded={setExpanded}
         />
@@ -99,9 +103,10 @@
         <ProjectCard
             id="artwork_project1"
             title="Artwork Project 1"
-            image="/artworkImage.png"
-            description="Here is one piece of art that I made."
-            moreInfo ="Slay."
+            image="/menu_screen.png"
+            description="Here is a menu screen that I made"
+            moreInfo ="I made this screen was made for a group project in Semester 2 of first year. It was the opening screen for a maze game where the player wondered around a forest. I used Aesprite to create all the assets in this game, I loved the cutesy retro feeling of the artstyle. I was heavily inspired by pixelated games such as the original Stardew Valley & Terraria and by other games known for their 'cute' style, such as Animal Crossing."
+            link=""
             expandedId={expandedProjectId}
             setExpanded={setExpanded}
         />
@@ -109,9 +114,10 @@
         <ProjectCard
             id="artwork_project2"
             title="Artwork Project 2"
-            image="/artworkImage.png"
-            description="Here is one piece of art that I made."
-            moreInfo ="Slay."
+            image="/background.png"
+            description="Here is a game background that I made."
+            moreInfo ="I created this piece for a cosy barista simulator game that I made in Semester 1 of second year. Like my previous project, I used Aesprite to create the assets for this game. I felt the pixel-art style reflected the warm, homey atmosphere of a coffee shop."
+            link=""
             expandedId={expandedProjectId}
             setExpanded={setExpanded}
         />
@@ -119,9 +125,10 @@
         <ProjectCard
             id="artwork_project3"
             title="Artwork Project 3"
-            image="/artworkImage.png"
-            description="Here is one piece of art that I made."
-            moreInfo ="Slay."
+            image="/TypefacePoster_Finished.png"
+            description="Here is a poster that I made."
+            moreInfo ="I created this poster to show off a typeface that I had created for one of my modules in Semester 2 of ."
+            link=""
             expandedId={expandedProjectId}
             setExpanded={setExpanded}
         />
@@ -135,9 +142,10 @@
         <ProjectCard
             id="games_project1"
             title="Games Project 1"
-            image="/gameImage.png"
+            image="/coffeeUtopiaScreenshot.png"
             description="Here is a game that I made."
             moreInfo ="Slay."
+            link=""
             expandedId={expandedProjectId}
             setExpanded={setExpanded}
         />
@@ -147,16 +155,9 @@
 
 <div id="miscSection">
     <h1>Miscellaneous</h1>
+    <h2> There are no projects in this section yet, come back soon! </h2>
     <div class="projects">
-        <ProjectCard
-            id="misc_project1"
-            title="Random Project 1"
-            image="/artworkImage.png"
-            description="Here is a random project that I was proud of."
-            moreInfo ="Slay."
-            expandedId={expandedProjectId}
-            setExpanded={setExpanded}
-        />
+        
     </div>
 </div>
 
@@ -165,6 +166,9 @@
     h1{
         text-align: left;
         margin-left: 2rem;
+    }
+    h2{
+        text-align: center;
     }
     #divider{
         border: 0.15rem solid rgb(159, 159, 159);
@@ -214,7 +218,7 @@
         display: grid;
         grid-template-columns: repeat(2,2fr);
         gap: 2rem;
-        max-width: 1400px;
+        max-width: 1600px;
         margin: 3rem auto;
         padding: 0 1 rem;
         justify-content: center;
