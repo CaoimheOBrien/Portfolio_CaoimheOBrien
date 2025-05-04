@@ -1,6 +1,7 @@
 <script>
 	import { onMount } from "svelte";
-
+    import { base } from "$app/paths";
+    
     onMount(() => {
         console.log("CV Page Loaded");
     });
@@ -8,18 +9,18 @@
 </script>
 <div id="container">
     <div id="CV_image">
-        <img src="/CV.png" alt="My CV">
+        <img src="{base}/CV.png" alt="My CV">
     </div>
     
     <div id="Downloads">
         <h1>My CV</h1>
         <div id="downloadLinks">
-            <a href="/CV_CaoimheOBrien2025.pdf" download="CV_CaoimheOBrien2025.pdf" class="downloadLink">
-                <img src="/downloadSymbol.png" id="downloadSymbol" alt="Black download symbol"/><span id="buttonText"> Download as a PDF </span>
+            <a href="{base}/CV_CaoimheOBrien2025.pdf" download="CV_CaoimheOBrien2025.pdf" class="downloadLink">
+                <img src="{base}/downloadSymbol.png" id="downloadSymbol" alt="Black download symbol"/><span id="buttonText"> Download as a PDF </span>
             </a>
 
-            <a href="/CV_CaoimheOBrien2025.docx" download="CV_CaoimheOBrien2025.docx" class="downloadLink">
-                <img src="/downloadSymbol.png" id="downloadSymbol" alt="Black download symbol"/> <span id="buttonText">Download as a Document </span>
+            <a href="{base}/CV_CaoimheOBrien2025.docx" download="CV_CaoimheOBrien2025.docx" class="downloadLink">
+                <img src="{base}/downloadSymbol.png" id="downloadSymbol" alt="Black download symbol"/> <span id="buttonText">Download as a Document </span>
             </a>
         </div>
     </div>

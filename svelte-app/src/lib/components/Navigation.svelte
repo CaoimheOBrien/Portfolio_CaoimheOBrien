@@ -1,14 +1,15 @@
 <script>
+    import { base } from "$app/paths"; 
     let opened = false; // is the menu opened or not
 </script>
 
 <nav>
     <div class ="navContainer">
         <ul class:open ={opened}> 
-            <li><a href= "/">Home</a></li>
-            <li><a href= "/contact_me">Contact Me</a></li>
-            <li><a href= "/CV">CV</a></li>
-            <li><a href= "/projects">Projects</a></li>
+            <li><a href= "{base}/">Home</a></li>
+            <li><a href= "{base}/contact_me">Contact Me</a></li>
+            <li><a href= "{base}/CV">CV</a></li>
+            <li><a href= "{base}/projects">Projects</a></li>
         </ul>
 
         <button class="hamburgerMenu" on:click={() => (opened = !opened)} aria-label="Menu Hamburder Menu">☰</button>

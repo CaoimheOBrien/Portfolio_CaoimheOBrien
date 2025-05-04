@@ -1,9 +1,9 @@
 <script>
-    
+    import { base } from "$app/paths"; 
 </script>
 
 <button id="topButton" title="Go to Top">
-    <a href="#Start" aria-label="navigationLinkToTopOfPage"> Top </a>
+    <a href="{base}/#Start" aria-label="navigationLinkToTopOfPage"> Top </a>
 </button>
 
 <style> 

@@ -2,6 +2,7 @@
 	import TopButton from "$lib/components/TopButton.svelte";
     import ProjectCard from "$lib/components/ProjectCard.svelte";
     import { onMount } from "svelte";
+    import { base } from "$app/paths"; 
 
     onMount(() => {
         console.log("Projects Page Loaded");
@@ -28,11 +29,10 @@
 
 <h1 id="Start">Categories</h1>
 <nav id="gallery">
-    <a href="#websiteSection" aria-label="navigationLinkToWebsiteSection"> <img src="circle.png" class="circleImg" alt="Dark grey circle"/> Website Section</a>
-    <a href="#animationSection" aria-label="navigationLinkToAnimationSection"> <img src="circle.png" class="circleImg" alt="Dark grey circle"/> Animation Section</a>
-    <a href="#artworkSection" aria-label="navigationLinkToArtworkSection"> <img src="circle.png" class="circleImg" alt="Dark grey circle"/> Artwork Section</a>
-    <a href="#gamesSection" aria-label="navigationLinkToGamesSection"> <img src="circle.png" class="circleImg" alt="Dark grey circle"/> Games Section</a>
-    <a href="#miscSection" aria-label="navigationLinkToMiscellaneousSection"> <img src="circle.png" class="circleImg" alt="Dark grey circle"/> Misc. Section</a>
+    <a href="{base}/#websiteSection" aria-label="navigationLinkToWebsiteSection"> <img src="circle.png" class="circleImg" alt="Dark grey circle"/> Website Section</a>
+    <a href="{base}/#animationSection" aria-label="navigationLinkToAnimationSection"> <img src="circle.png" class="circleImg" alt="Dark grey circle"/> Animation Section</a>
+    <a href="{base}/#artworkSection" aria-label="navigationLinkToArtworkSection"> <img src="circle.png" class="circleImg" alt="Dark grey circle"/> Artwork Section</a>
+    <a href="{base}/#miscSection" aria-label="navigationLinkToMiscellaneousSection"> <img src="circle.png" class="circleImg" alt="Dark grey circle"/> Misc. Section</a>
 </nav>
 
 <hr id="divider">
@@ -44,7 +44,7 @@
         <ProjectCard
             id="website_project1"
             title="Sage Academy"
-            image="/sageAcademyScreenshot.png"
+            image="{base}/sageAcademyScreenshot.png"
             description="Here is a website that I made for a group project"
             moreInfo ="I created this website as a part of a group project with 2 other classmates. In our brief we were told to create an educational website so we created a platform for staff and students to have learning resources, quizzes and other information. I had a great experience during this project. It was my first time using the Svelte framework which opened up a lot of opportunities for us. The link to the live website is below:"
             link="https://caoimheobrien.github.io/WebUIDesign_2025GroupProject/"
@@ -55,7 +55,7 @@
         <ProjectCard
             id="website_project2"
             title="'Adventure In the Woods' Report"
-            image="/adventureInTheWoodsReportScreenshot.png"
+            image="{base}/adventureInTheWoodsReportScreenshot.png"
             description="Here is a website that I made for my Leaving Certificate Project"
             moreInfo ="As part of my Leaving Cert Computer Science final project, I had to create a report in the format of a website. For my project I had made a text-based python game called 'Adventure in the Woods' which was a RPG/ choose your own adventure game. It was one of the first websites I had total creative freedom over and this made me fall in love with web development."
             link=""
@@ -74,7 +74,7 @@
         <ProjectCard
             id="animation_project1"
             title="Bounce Animation"
-            image="/Bounce_Caoimhe.gif"
+            image="{base}/Bounce_Caoimhe.gif"
             description="Here is one animation that I made."
             moreInfo ="This was my first attempt at animation in first year using Aesprite. We created a simple bounce animation and I'm really proud of how it turned out."
             link=""
@@ -85,7 +85,7 @@
         <ProjectCard
             id="animation_project2"
             title = "Game Idle Animation"
-            image="/enemy1_idle.gif"
+            image="{base}/enemy1_idle.gif"
             description="Here is an idle animation that I made."
             moreInfo ="I made this character and idle animation as an enemy in a game."
             link=""
@@ -103,7 +103,7 @@
         <ProjectCard
             id="artwork_project1"
             title="Game Menu Screen"
-            image="/menu_screen.png"
+            image="{base}/menu_screen.png"
             description="Here is a menu screen that I made"
             moreInfo ="I made this screen was made for a group project in Semester 2 of first year. It was the opening screen for a maze game where the player wondered around a forest. I used Aesprite to create all the assets in this game, I loved the cutesy retro feeling of the artstyle. I was heavily inspired by pixelated games such as the original Stardew Valley & Terraria and by other games known for their 'cute' style, such as Animal Crossing."
             link=""
@@ -114,7 +114,7 @@
         <ProjectCard
             id="artwork_project2"
             title="Game Background"
-            image="/background.png"
+            image="{base}/background.png"
             description="Here is a game background that I made."
             moreInfo ="I created this piece for a cosy barista simulator game that I made in Semester 1 of second year. Like my previous project, I used Aesprite to create the assets for this game. I felt the pixel-art style reflected the warm, homey atmosphere of a coffee shop."
             link=""
@@ -125,7 +125,7 @@
         <ProjectCard
             id="artwork_project3"
             title="Typeface Poster"
-            image="/TypefacePoster_Finished.png"
+            image="{base}/TypefacePoster_Finished.png"
             description="Here is a poster that I made."
             moreInfo ="I created this poster to show off a typeface that I had created for one of my modules in Semester 2 of ."
             link=""
@@ -142,7 +142,7 @@
         <ProjectCard
             id="games_project1"
             title="Coffee Utopia"
-            image="/coffeeUtopiaScreenshot.png"
+            image="{base}/coffeeUtopiaScreenshot.png"
             description="Here is a game that I made."
             moreInfo ="Slay."
             link=""

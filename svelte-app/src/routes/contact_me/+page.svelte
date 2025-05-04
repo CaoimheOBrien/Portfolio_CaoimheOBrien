@@ -1,11 +1,12 @@
 <script>
 	import { onMount } from "svelte";
+    import Card	 from "$lib/components/Card.svelte";
 
     onMount(() => {
         console.log("Contact Me Page Loaded");
     });
 
-    import Card	 from "$lib/components/Card.svelte";
+    
 </script>
 
 <h1>Got Questions? Let’s Spark a Conversation!</h1>
