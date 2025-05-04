@@ -10,6 +10,9 @@ const config = {
 		paths: {
 			base: dev ? '': `/${repoName}`
 		},
+		prerender:{
+			handleMissingId: 'warn'
+		},
 	}
 };
 
