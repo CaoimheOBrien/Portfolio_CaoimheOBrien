@@ -73,7 +73,7 @@
     <div class="projects">
         <ProjectCard
             id="animation_project1"
-            title="Animation Project 1"
+            title="Bounce Animation"
             image="/Bounce_Caoimhe.gif"
             description="Here is one animation that I made."
             moreInfo ="This was my first attempt at animation in first year using Aesprite. We created a simple bounce animation and I'm really proud of how it turned out."
@@ -84,7 +84,7 @@
 
         <ProjectCard
             id="animation_project2"
-            title="Animation Project 2"
+            title = "Game Idle Animation"
             image="/enemy1_idle.gif"
             description="Here is an idle animation that I made."
             moreInfo ="I made this character and idle animation as an enemy in a game."
@@ -102,7 +102,7 @@
     <div class="projects">
         <ProjectCard
             id="artwork_project1"
-            title="Artwork Project 1"
+            title="Game Menu Screen"
             image="/menu_screen.png"
             description="Here is a menu screen that I made"
             moreInfo ="I made this screen was made for a group project in Semester 2 of first year. It was the opening screen for a maze game where the player wondered around a forest. I used Aesprite to create all the assets in this game, I loved the cutesy retro feeling of the artstyle. I was heavily inspired by pixelated games such as the original Stardew Valley & Terraria and by other games known for their 'cute' style, such as Animal Crossing."
@@ -113,7 +113,7 @@
 
         <ProjectCard
             id="artwork_project2"
-            title="Artwork Project 2"
+            title="Game Background"
             image="/background.png"
             description="Here is a game background that I made."
             moreInfo ="I created this piece for a cosy barista simulator game that I made in Semester 1 of second year. Like my previous project, I used Aesprite to create the assets for this game. I felt the pixel-art style reflected the warm, homey atmosphere of a coffee shop."
@@ -124,7 +124,7 @@
 
         <ProjectCard
             id="artwork_project3"
-            title="Artwork Project 3"
+            title="Typeface Poster"
             image="/TypefacePoster_Finished.png"
             description="Here is a poster that I made."
             moreInfo ="I created this poster to show off a typeface that I had created for one of my modules in Semester 2 of ."
@@ -141,7 +141,7 @@
     <div class="projects">
         <ProjectCard
             id="games_project1"
-            title="Games Project 1"
+            title="Coffee Utopia"
             image="/coffeeUtopiaScreenshot.png"
             description="Here is a game that I made."
             moreInfo ="Slay."
@@ -178,7 +178,8 @@
 
     #gallery{
         /*Layout Stuff */
-        grid-template-columns: repeat(2,2fr);
+        grid-template-columns: repeat(autofit, 4fr);
+        gap: 1rem;
         max-width: 2000px;
         width: 100%;
         margin: 1rem auto;
@@ -216,12 +217,58 @@
 
     .projects{
         display: grid;
-        grid-template-columns: repeat(2,2fr);
+        grid-template-columns: repeat(2, 2fr);
         gap: 2rem;
         max-width: 1600px;
         margin: 3rem auto;
         padding: 0 1 rem;
         justify-content: center;
     }
+
+
+    /* Responsiveness*/
+    @media (max-width: 1223px){ /*Medium sized screen */
+        h1{
+            font-size: 1.8rem;
+            margin-left: 1rem;
+        }
+
+        .projects{
+            padding: 0 1rem;
+            grid-template-columns: reapeat(autofit, 1fr);
+            display: block; 
+            padding: 0 1rem;
+        }
+
+        #gallery a{
+            font-size: 1.2rem;
+            padding: 0.75rem;
+            margin: 1rem auto;
+            max-width: 15rem;
+        }
+
+        .circleImg{
+            width: 2vh;
+            margin-right: 0.5rem;
+        }
+    }
+
+    @media (max-width: 650px){ /*Small Tablets/ Screens */ 
+        hr{
+            width: 100%; 
+        }
+    }
+
+    @media (max-width: 530px){ /*Mobile Screens */ 
+        #gallery a{
+            display: block; 
+        }
+
+        hr{
+            width: 100%; 
+        }
+
+    }
+
 
 </style>

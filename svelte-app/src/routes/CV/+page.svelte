@@ -31,28 +31,37 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
         padding: 2rem;
+        width: 100%; 
     }
 
     #CV_image,#Downloads{
-        width: fit-content;
+        max-width: 600px;
+        min-width: 280px;
         margin: 0.2rem;
         padding: 0.5rem;
     }
 
-    #CV_image{
-        max-width: 1400px;
+    #CV_image img{
+        max-width: 100%;
+        height: auto;
     }
     
     #downloadLinks{
         display: flex;
+        justify-content: center;
         align-items: stretch;
         flex-direction: column;
         gap: 2.5rem;
-        width: max-content;
-        text-align: start;
 
+        width: max-content;
+        margin: 2rem; 
+        height: 30vh; 
+        text-align: start;
     }
+
     .downloadLink{
         /*Color & text stuff*/
         background-color: rgb(212, 227, 233);
@@ -63,16 +72,15 @@
         border-radius: 10px;
 
         /*Padding, layout, etc */
-        padding: 0.5rem;
-        padding-right: 1rem;
-        display: block;
+        padding: 1rem;
 
         /*Transistions/ Transformations */
         transition: transform 0.3s ease-out, box-shadow 0.3s ease;
 
         /*Responsive stuff*/ 
-        max-width: 800px;
+        max-width: 600px;
         max-height: 120px;
+        width: 100%; 
         
         /*Others*/
         cursor: pointer;
@@ -82,12 +90,41 @@
         transform: translateY(-10px);
     }
 
-    #buttonText{
-        justify-content: center;
+    #downloadSymbol{
+        width: 2rem;
+        height: auto;
     }
 
-    #downloadSymbol{
-        margin-right: 0.3rem;
-        margin-top: 0.3rem;
+    /*Responsiveness*/ 
+    @media (max-width: 1090px){
+        #CV_image, #Downloads{
+            max-width: 100%;
+            width: 90%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        #downloadLinks{
+            justify-content: center;
+            display: inline-flex; 
+        }
     }
+
+    @media (max-width: 711px){
+        #CV_image, #Downloads{
+            max-width: 100%;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        #downloadLinks{
+            max-width: 100%;
+            margin: auto; 
+        }
+
+        .downloadLink{
+            font-size: 1.2rem;
+        }
+    }
+
 </style>

@@ -5,7 +5,7 @@
 <header>
     <!--My Name Logo Thing-->
     <div class="Logo_Title">
-        <h2>Caoimhe O'Brien</h2>
+        <h2>Caoimhe O'Brien</h2> 
     </div>
 
     <Navigation />
@@ -15,14 +15,22 @@
 <style>
     header{
         display: flex;
-        align-items: center;
+        position: relative;
+        margin: 1rem;
         justify-content: space-between;
-        padding: 1rem;
     }
     .Logo_Title{
         display: flex;
-        align-content: center;
+        align-content: start;
+        text-align: left;
         font-size: 1.5rem;
-        margin-right: 0.4srem;
+        margin-right: 0.2rem;
+    }
+
+    /*Responsiveness */
+    @media (max-width: 380px){
+        .Logo_Title{
+            font-size: 1.3rem;
+        }
     }
 </style>

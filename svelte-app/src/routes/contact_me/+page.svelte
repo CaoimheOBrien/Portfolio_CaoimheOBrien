@@ -19,8 +19,6 @@
     </Card>
 </div>
 
-<p> temporary layout</p>
-
 <style>
     .gallery{
         display: grid;

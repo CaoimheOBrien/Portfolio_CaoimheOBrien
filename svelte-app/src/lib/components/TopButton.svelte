@@ -16,15 +16,10 @@
         border-radius: 10px;
         border: 4px groove rgb(3, 71, 39);
 
-        /*Text Stuff */
-        font-size: 3rem;
-        
         /*Layout */ 
-        align-content: center;
-        padding: 0.75rem;
-        padding-top: 0.2rem;
-        width: 8rem; 
-        right: 2.8rem;
+        padding: 1rem;
+        width: 7rem; 
+        right: 0.5rem;
         bottom: 1rem;
         float: right;
         position: fixed;
@@ -32,12 +27,34 @@
     }
 
     #topButton a{
-        text-align: center;
-        font-size: 1.6rem;
+        font-size: 2.6rem;
     }
 
     #topButton:hover{
         background: rgba(18, 104, 51, 0.8);
         transform: translateY(-10px);
+    }
+
+    /*Responsiveness*/ 
+    @media(max-width: 1223px){
+        #topButton{
+            right: 1rem; 
+        }
+
+        #topButton a{
+            font-size: 1.8rem;
+        }
+    }
+
+    @media(max-width: 650px){
+        #topButton{
+            font-size: 1.5rem;
+            width: 5rem;
+            right: 0.5rem;
+        }
+
+        #topButton a{
+            font-size: 1.5rem;
+        }
     }
 </style>

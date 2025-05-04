@@ -61,6 +61,9 @@
 
     .projectLink{
         font-size: 1.2rem;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        max-width: 100%;
     }
 
     #dots, #more {
@@ -77,5 +80,63 @@
 
     p{
         margin-left: 7rem;
+    }
+
+    /*Responsiveness */
+    @media (max-width: 795px){
+        h2, p{
+            margin-left: 2rem; 
+        }
+    }
+    @media (max-width: 695px){
+        #projectCard {
+            padding: 1rem;
+            overflow-wrap: break-word;
+        }
+
+        .projectPic {
+            max-width: 30rem;
+        }
+
+        .readMoreButton {
+            max-width: 20rem;
+            min-width: 10rem; 
+            font-size: 1rem;
+        }
+
+        .projectLink {
+            font-size: 1.2rem;
+            max-width: 80%;
+        }
+        
+        h2, p{
+            margin-left: 1.4rem; 
+        }
+    }
+
+    @media (max-width: 530px){
+        .projectPic {
+            max-width: 20rem;
+        }
+    }
+
+    @media (max-width: 380px){
+        #projectCard{
+            padding: 0.5rem;
+        }
+        .projectPic {
+            max-width: 18rem;
+            margin-left: auto;
+        }
+
+        .projectLink {
+            font-size: 0.8rem;
+            max-width: 70%;
+        }
+        
+        h2, p{
+            margin-left: 0px;
+            font-size: 2rem;
+        }
     }
 </style>
